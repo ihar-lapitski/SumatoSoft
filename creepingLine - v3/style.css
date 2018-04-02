@@ -1,0 +1,93 @@
+#main-container {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+.controls #text-field{
+    width: 360px;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+.controls .cool-button{
+    width: 100px;
+    height: 30px;
+    background-color: #46ba48;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#go-button {
+    background-color: #46ba48;
+    margin-right: 10px;
+}
+
+#stop-button {
+    background-color: #ef4239;
+}
+
+.controls .cool-button:focus {
+    outline: 0;
+}
+
+.creeping-line-wrapper {
+    white-space:nowrap;
+    overflow:hidden;
+    width:100%;
+    background-color: #ddd;
+}
+
+#creeping-line-container {
+    min-height: 84px;
+    padding: 20px 0 16px 100%;
+}
+
+.animated {
+    animation: creeping-line-wrapper 0s infinite linear;
+    display:inline-block;
+}
+
+@keyframes creeping-line-wrapper {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+#creeping-line-container .column {
+    display: inline-block;
+}
+
+#creeping-line-container .column .pixel {
+    width: 10px;
+    height: 10px;
+}
+
+#creeping-line-container .column .alight-pixel {
+    background-color: #436c82;
+}
+
+::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+::-moz-placeholder {
+    color: #ccc;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+:focus::-moz-placeholder {
+    color: transparent;
+}
